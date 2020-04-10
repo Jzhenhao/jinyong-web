@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Head -->
+
+	<head>
+		<title>天龙八部</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+
+		<!-- menu -->
+		<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
+		<!-- //menu -->
+		<link href="css/jquery.fatNav.css" rel="stylesheet" type="text/css">
+		<!--导航栏-->
+		<link href="css/style222.css" rel="stylesheet" />
+
+		<!--FlexSlider-->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<!--//FlexSlider-->
+
+		<link rel="stylesheet" href="css/lightbox.css">
+		<!-- For-gallery-CSS -->
+
+		<!-- custom css theme files -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<!-- //custom css theme files -->
+
+		<!-- google fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+		<!-- //google fonts -->
+
+		<link href="src/css/reset.css">
+		<link href="https://cdn.bootcss.com/highlight.js/9.15.5/styles/androidstudio.min.css">
+		<script src="dist/vsPlayAudio.min.js"></script>
+		<script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"></script>
+		<script>
+			hljs.initHighlightingOnLoad();
+		</script>
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+
+		<script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+
+		<style>
+			#nav {
+				text-align: center;
+			}
+			
+			#nav ul li {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 15px 0 15px;
+				border-left: 1px dotted #2bbc8a;
+				line-height: 15px;
+			}
+			
+			#nav ul li a {
+				font-size: .8rem;
+				color: #2bbc8a;
+			}
+			
+			#nav ul .blog {
+				border-left: 0px dotted #2bbc8a;
+			}
+			
+			.gallery-info img {
+				width: 300px;
+				height: 300px;
+			}
+			
+			.long {
+				position: relative;
+				top: -200px;
+				left: 450px;
+				width: 920px;
+				height: 120px;
+				margin-bottom: -50px;
+			}
+			
+			.feng {
+				position: relative;
+				top: -160px;
+				left: 90px;
+				width: 400px;
+				height: 200px;
+				margin-bottom: -50px;
+			}
+			
+			#ul1 {
+				width: 660px;
+				position: relative;
+				margin: 10px auto;
+			}
+			
+			#ul1 li {
+				width: 200px;
+				height: 200px;
+				float: left;
+				list-style: none;
+				margin: 10px;
+			}
+			
+			#ul1 li:hover {
+				border-color: #9a9fa4;
+				box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.85);
+			}
+			
+			#ul1 .active {
+				border: 1px dashed red;
+			}
+			
+			#ul1 img:hover {
+				width: 300px;
+				height: 225px;
+			}
+			
+			.photo {
+				margin: auto;
+				margin-top: -60px;
+				width: 100%;
+				height: 400px;
+			}
+			
+			.zuotu img {
+				float: left;
+				width: 400px;
+				height: 500px;
+			}
+			
+			.zuotu img:hover {
+				filter: brightness(1.2);
+				transition: all 1s ease;
+			}
+			
+			.zuotu p {
+				opacity: 0;
+				transition: all 2s ease;
+				position: absolute;
+				left: 50px;
+			}
+			
+			.zuotu:hover p {
+				opacity: 1;
+			}
+			
+			.zuotu div {
+				opacity: 0;
+				transition: all 6s ease;
+				position: absolute;
+				left: 100px;
+				top: 400px;
+			}
+			
+			.zuotu:hover div {
+				opacity: 1;
+			}
+			
+			.youtu {
+				float: right;
+				width: 400px;
+				height: 500px;
+			}
+			
+			.youtu img:hover {
+				filter: contrast(2.8);
+				transition: all 1s ease;
+			}
+			
+			.jianjie {
+				margin: auto;
+				width: 1220px;
+				height: 480px;
+				text-indent: 2em;
+				line-height: 50px;
+				background-color: #D0E9C6;
+				display: block;
+				font-style: initial;
+				border-radius: 20px;
+				font-size: 1.5em;
+				box-shadow: rgba(0, 0, 0, 0.3) 2px 3px 2px;
+			}
+		</style>
+
+	</head>
+
+	<body id="home">
+		<!-- banner -->
+		<nav class="w3-navbar">
+			<div class="container">
+				<div class="nav-top" style="position: relative;">
+
+					<!-- Logo -->
+					<div class="logo">
+						<a href="home.html">
+							<font face="KaiTi" title="home">赤子丹心 </font><span><img src="images/印章.jpg" style="width: 25px; height: 32px;" /> </span>
+						</a>
+					</div>
+					<!-- Logo -->
+					<div class="right">
+						<div class="w3-socials">
+							<img src="images/横幅1.jpg" style="position: relative;margin-left: -688px;margin-right: 16px;width: 200px;height: 40px;" />
+							<img src="images/横幅2.jpg" style="position: relative;width: 190px;height: 40px;" />
+						</div>
+					</div>
+					<div class="clear" style="margin:0 auto;width: 80px;height: 80px;border-radius: 20px;background: #fff;margin-right:200px;">
+						<div id="vsPlayAudio" style="margin: 4px auto;width: 55px;height: 55px;"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<!-- end container -->
+		</nav>
+
+		<div style="background-color: #F3F3F3;">
+			<!-- nav -->
+			<div class="w3layouts-nav-right">
+				<div class="fat-nav">
+					<div class="fat-nav__wrapper">
+						<ul>
+							<li>
+								<a href="home.html">主页</a>
+							</li>
+							<li>
+								<a href="个人生平.html">个人生平</a>
+							</li>
+							<li>
+								<a href="作品展示.html">作品展示</a>
+							</li>
+							<li>
+								<a href="作品评价.html">作品评价</a>
+							</li>
+							<li>
+								<a href="作品集锦.html">作品集锦</a>
+							</li>
+							<li>
+								<a href="用户留言.html">用户留言</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 导航栏代码 开始 -->
+
+		<div class="handle_a">
+
+			<div class="head_bg">
+
+				<div class="cl top_h">
+
+					<div class="nov m_l l">
+
+						<div id="tools_point" style="color: #F2FDDB;">❤❤❤黄嘉程❤❤❤</div>
+
+						<ul>
+
+							<li>
+								<a href="作品展示.html" target="_blank" class="hover"><span class="db tingico liico2"></span>作品展示</a>
+							</li>
+
+							<li>
+								<a href="ldj.html" target="_blank" class="hover6"><span class="db tingico liico8"></span>鹿鼎记</a>
+							</li>
+
+							<li>
+								<a href="sdxl.html" target="_blank" class="hover3"><span class="db tingico liico8"></span>神雕侠侣</a>
+							</li>
+
+							<li>
+								<a href="tlbb.html" target="_blank" class="hover1"><span class="db tingico liico8"></span>天龙八部</a>
+							</li>
+
+							<li>
+								<a href="xajh.html" target="_blank" class="hover4"><span class="db tingico liico8"></span>笑傲江湖</a>
+							</li>
+
+							<li>
+								<a href="sdyxz.html" target="_blank" class="hover5"><span class="db tingico liico8"></span>射雕英雄传</a>
+							</li>
+
+							<li>
+								<a href="yttlj.html" target="_blank" class="hover2"><span class="db tingico liico8"></span>倚天屠龙记</a>
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="park"></div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<!-- 导航栏代码 结束 -->
+		<div class="zuotu">
+			<img src="img/左图.jpg" />
+			<p style="color: pink;font-size: 6em;">❤❤<br>&nbsp;&nbsp;❤</p>
+			<div style="color: pink;font-size: 6em;">❤❤<br>&nbsp;&nbsp;❤</div>
+		</div>
+		<div class="youtu">
+			<img src="img/右图.jpg" />
+		</div>
+		<div class="about" id="about" style="background-color: #FAFAD2;height: 504px;">
+			<div class="container">
+				<div class="photo">
+					<ul id="ul1">
+						<li><img src="images/tlbb1.jpg" width="200" height="200" /></li>
+						<li><img src="images/tlbb2.jpg" width="200" height="200" /></li>
+						<li><img src="images/tlbb3.jpg" width="200" height="200" /></li>
+						<li><img src="images/tlbb4.jpg" width="200" height="200" /></li>
+						<li><img src="images/tlbb5.jpg" width="200" height="200" /></li>
+						<li><img src="images/tlbb6.jpg" width="200" height="200" /></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="margin: auto;width: 1000px;font-size: 2em;">
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;《天龙八部》是中国现代作家金庸创作的长篇武侠小说。这部小说从1963年开始创作，历时4年完成。前后共有三版，并在2005年第三版中经历6稿修订，结局改动较大。
+
+				<br>&emsp;&emsp; 小说以宋哲宗时代为背景，通过宋、辽、大理、西夏、吐蕃等王国之间的武林恩怨和民族矛盾，从哲学的高度对人生和社会进行审视和描写，展示了一幅波澜壮阔的生活画卷，其故事之离奇曲折、涉及人物之众多、历史背景之广泛、武侠战役之庞大、想象力之丰富当属“金书”之最。<br>&emsp;&emsp; 书名出于佛经，有“世间众生”的意思，寓意象征着大千世界的芸芸众生，背后笼罩着佛法的无边与超脱。全书主旨“无人不冤，有情皆孽”，作品风格宏伟悲壮，是一部写尽人性、悲剧色彩浓厚的史诗巨著。
+
+			</p>
+		</div>
+		<div style="border-left: 30px solid #FF3300;border-top:30px solid #FFFF00;border-right: 30px solid #5BC0DE;background-color: mediumpurple;">
+			<div class="jianjie">
+				<p>《天龙八部》无疑是“金庸式”悲剧的集大成之作。<br>&emsp;&emsp;作者怀着悲天悯人的创作心态，夸张地描绘了各色人物在命运操纵和欲望支配下的种种心态和情状，刻画了尘世众生的痛苦和悲哀。<br>&emsp;&emsp;书中以段誉、乔峰、虚竹三大主角为代表的主要人物，似乎都有一种与生俱来的“命运”的悲剧色彩，他们的一次次奋进和抗争都不可避免的滑向不幸的旋涡。然而金庸不仅仅局限于“命运”给人造成的巨大的灾难与不幸，而是以尖锐的笔触直指人性中的卑劣和肮脏，深刻地揭示了“命运悲剧”的内在成因。<br>&emsp;&emsp;同时，他又借助民族纷争的特殊历史时代，积极探询民族文化背景下的悲剧冲突。<br>&emsp;&emsp;把《天龙八部》称为北宋时期“罪与罚”，最为恰当不过。
+				</p>
+			</div>
+		</div>
+		<div class="w3l_footer" style="margin-top: -80px;">
+			<div class="container">
+				<div class="apple">
+					<ul>
+						<li>
+							<a href="#" target="_blank">侠之大者，为国为民。 </a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">桃花影落飞神剑，碧海潮生按玉箫。</a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">他强任他强，清风拂山岗，他横由他横，明月照大江。 </a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">情不知所起，一往情深 ；恨不知所终，一笑而泯。</a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">我是尘间摆渡人，为君闲计百年身。</a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">慧极必伤,情深不寿.</a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">情深意真岂在丑俊,千山万水苦随君行 .</a>
+						</li>
+
+						<li>
+							<a href="#" target="_blank">打不过，逃 !</a>
+						</li>
+
+					</ul>
+
+				</div>
+				<div class="connect-social">
+					<ul>
+						<li class="connect">联系我们 : </li>
+						<li>
+							<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+						</li>
+						<li>
+							<a href="#" class="social-button linkedin"><i class="fa fa-linkedin"></i></a>
+						</li>
+					</ul>
+				</div>
+				<p class="agileits_w3ls_copyright">&copy;天地四方为江湖，世人聪明反糊涂。名利场上风浪起，赢到头来却是输。
+				</p>
+				<div class="arrow-container animated fadeInDown">
+					<a href="#home" class="arrow-2 scroll">
+						<i class="fa fa-angle-up"></i>
+					</a>
+					<div class="arrow-1 animated hinge infinite zoomIn"></div>
+				</div>
+			</div>
+		</div>
+		<!--//footer -->
+
+		<!-- Default-JavaScript-File -->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- //Default-JavaScript-File -->
+
+		<!-- gauge-meter -->
+		<script src="js/jquery.gauge.js"></script>
+		<script>
+			$(document).ready(function() {
+				$("#gauge1").gauge(90, {
+					color: "#ff4f81",
+					unit: " %",
+					type: "halfcircle"
+				});
+				$("#gauge2").gauge(70, {
+					color: "#2dde98",
+					unit: " %",
+					type: "halfcircle"
+				});
+				$("#gauge3").gauge(75, {
+					color: "#00aeff",
+					unit: " %",
+					type: "halfcircle"
+				});
+				$("#gauge4").gauge(40, {
+					color: "#ffb900",
+					unit: " %",
+					type: "halfcircle"
+				});
+			});
+		</script>
+		<!-- //gauge-meter -->
+
+		<!--menu script-->
+		<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/jquery.fatNav.js"></script>
+		<script>
+			(function() {
+
+				$.fatNav();
+
+			}());
+		</script>
+
+		<!--Start-slider-script-->
+		<script defer src="js/jquery.flexslider.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('.flexslider').flexslider({
+					animation: "slide",
+					start: function(slider) {
+						$('body').removeClass('loading');
+					}
+				});
+			});
+		</script>
+		<!--End-slider-script-->
+
+		<!-- smooth scrolling -->
+		<script src="js/SmoothScroll.min.js"></script>
+		<!-- smooth scrolling -->
+
+		<!-- scrolling script -->
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event) {
+					event.preventDefault();
+					$('html,body').animate({
+						scrollTop: $(this.hash).offset().top
+					}, 1000);
+				});
+			});
+		</script>
+		<!-- //scrolling script -->
+
+	</body>
+	<!-- //Body -->
+
+</html>
+<script>
+	var player = new vsPlayAudio({
+		music: {
+			//必需项,音乐配置
+			type: 'cloud',
+			//必需项,网易云方式指定填'cloud'
+			source: 2819944616
+			//必需项,网易云音乐歌单id
+			//登录网易云网页版,在网页地址中拿到
+			// ... playlist?id=317921676
+		},
+		autoPlay: true,
+		random: true
+	});
+</script>
+<script type="text/javascript">
+	function autoScroll(obj) {
+
+		$(obj).find("ul").animate({
+
+			marginTop: "-39px"
+
+		}, 500, function() {
+
+			$(this).css({
+				marginTop: "0px"
+			}).find("li:first").appendTo(this);
+
+		})
+
+	}
+
+	$(function() {
+
+		setInterval('autoScroll(".maquee")', 3000);
+
+		setInterval('autoScroll(".apple")', 2000);
+
+	})
+</script>
+<script type="text/javascript" src="js/move.js"></script>
+<script>
+	window.onload = function() {
+		var oUl = document.getElementById("ul1");
+		var aLi = oUl.getElementsByTagName("li");
+		var disX = 0;
+		var disY = 0;
+		var minZindex = 1;
+		var aPos = [];
+		for(var i = 0; i < aLi.length; i++) {
+			var t = aLi[i].offsetTop;
+			var l = aLi[i].offsetLeft;
+			aLi[i].style.top = t + "px";
+			aLi[i].style.left = l + "px";
+			aPos[i] = {
+				left: l,
+				top: t
+			};
+			aLi[i].index = i;
+		}
+		for(var i = 0; i < aLi.length; i++) {
+			aLi[i].style.position = "absolute";
+			aLi[i].style.margin = 0;
+			setDrag(aLi[i]);
+		}
+		//拖拽
+		function setDrag(obj) {
+			obj.onmouseover = function() {
+				obj.style.cursor = "move";
+			}
+			obj.onmousedown = function(event) {
+				var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+				var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft;
+				obj.style.zIndex = minZindex++;
+				//当鼠标按下时计算鼠标与拖拽对象的距离
+				disX = event.clientX + scrollLeft - obj.offsetLeft;
+				disY = event.clientY + scrollTop - obj.offsetTop;
+				document.onmousemove = function(event) {
+					//当鼠标拖动时计算div的位置
+					var l = event.clientX - disX + scrollLeft;
+					var t = event.clientY - disY + scrollTop;
+					obj.style.left = l + "px";
+					obj.style.top = t + "px";
+					/*for(var i=0;i<aLi.length;i++){
+						aLi[i].className = "";
+						if(obj==aLi[i])continue;//如果是自己则跳过自己不加红色虚线
+						if(colTest(obj,aLi[i])){
+							aLi[i].className = "active";
+						}
+					}*/
+					for(var i = 0; i < aLi.length; i++) {
+						aLi[i].className = "";
+					}
+					var oNear = findMin(obj);
+					if(oNear) {
+						oNear.className = "active";
+					}
+				}
+				document.onmouseup = function() {
+					document.onmousemove = null; //当鼠标弹起时移出移动事件
+					document.onmouseup = null; //移出up事件，清空内存
+					//检测是否普碰上，在交换位置
+					var oNear = findMin(obj);
+					if(oNear) {
+						oNear.className = "";
+						oNear.style.zIndex = minZindex++;
+						obj.style.zIndex = minZindex++;
+						startMove(oNear, aPos[obj.index]);
+						startMove(obj, aPos[oNear.index]);
+						//交换index
+						oNear.index += obj.index;
+						obj.index = oNear.index - obj.index;
+						oNear.index = oNear.index - obj.index;
+					} else {
+
+						startMove(obj, aPos[obj.index]);
+					}
+				}
+				clearInterval(obj.timer);
+				return false; //低版本出现禁止符号
+			}
+		}
+		//碰撞检测
+		function colTest(obj1, obj2) {
+			var t1 = obj1.offsetTop;
+			var r1 = obj1.offsetWidth + obj1.offsetLeft;
+			var b1 = obj1.offsetHeight + obj1.offsetTop;
+			var l1 = obj1.offsetLeft;
+
+			var t2 = obj2.offsetTop;
+			var r2 = obj2.offsetWidth + obj2.offsetLeft;
+			var b2 = obj2.offsetHeight + obj2.offsetTop;
+			var l2 = obj2.offsetLeft;
+
+			if(t1 > b2 || r1 < l2 || b1 < t2 || l1 > r2) {
+				return false;
+			} else {
+				return true;
+			}
+		}
+		//勾股定理求距离
+		function getDis(obj1, obj2) {
+			var a = obj1.offsetLeft - obj2.offsetLeft;
+			var b = obj1.offsetTop - obj2.offsetTop;
+			return Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+		}
+		//找到距离最近的
+		function findMin(obj) {
+			var minDis = 999999999;
+			var minIndex = -1;
+			for(var i = 0; i < aLi.length; i++) {
+				if(obj == aLi[i]) continue;
+				if(colTest(obj, aLi[i])) {
+					var dis = getDis(obj, aLi[i]);
+					if(dis < minDis) {
+						minDis = dis;
+						minIndex = i;
+					}
+				}
+			}
+			if(minIndex == -1) {
+				return null;
+			} else {
+				return aLi[minIndex];
+			}
+		}
+	}
+</script>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!-- Head -->
+
+	<head>
+		<title>用户留言</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<meta name="keywords" content="" />
+
+		<!-- menu -->
+		<link type="text/css" rel="stylesheet" href="css/cm-overlay.css" />
+		<!-- //menu -->
+		<link href="css/jquery.fatNav.css" rel="stylesheet" type="text/css">
+
+		<!--FlexSlider-->
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+		<!--//FlexSlider-->
+
+		<link rel="stylesheet" href="css/lightbox.css">
+		<!-- For-gallery-CSS -->
+
+		<!-- custom css theme files -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<!-- //custom css theme files -->
+
+		<!-- google fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+		<!-- //google fonts -->
+<link rel="stylesheet" href="css/animate.css" />
+<script type="text/javascript" src="js/wow.min.js" ></script>
+<script>
+	new WOW().init();
+</script>
+		<link href="src/css/reset.css">
+		<link href="https://cdn.bootcss.com/highlight.js/9.15.5/styles/androidstudio.min.css">
+		<script src="dist/vsPlayAudio.min.js"></script>
+		<script src="https://cdn.bootcss.com/highlight.js/9.15.6/highlight.min.js"></script>
+		<script>
+			hljs.initHighlightingOnLoad();
+		</script>
+		<link href="css/index.css" rel="stylesheet" type="text/css">
+
+		<script src="http://www.jq22.com/jquery/1.9.1/jquery.min.js"></script>
+		<style type="text/css">
+			* {
+				/*margin:0; padding:0;*/
+			}
+			
+			body,
+			input {
+				font-size: 14px;
+				line-height: 24px;
+				color: #333;
+				font-family: Microsoft yahei, Song, Arial, Helvetica, Tahoma, Geneva;
+			}
+			
+			h1 {
+				margin-bottom: 15px;
+				height: ;
+				line-height: 50px;
+				text-align: center;
+				font-size: 24px;
+				color: #fff;
+				background: black;
+			}
+			
+			#content #post,
+			#comment p {
+				zoom: 1;
+			}
+			
+			#content #post:after,
+			#comment p:after {
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden;
+				overflow: hidden;
+				content: '.';
+			}
+			
+			.transition {
+				-webkit-transition: all 0.5s linear;
+				-moz-transition: all 0.5s linear;
+				-o-transition: all 0.5s linear;
+				-ms-transition: all 0.5s linear;
+				transition: all 0.5s linear;
+			}
+			
+			#content {
+				margin: 0 auto;
+				width: 960px;
+				overflow: hidden;
+			}
+			
+			#content #post {
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+				border-bottom: 1px #d4d4d4 dashed;
+				height: 556px;
+			}
+			
+			#content #post textarea {
+				display: block;
+				margin-bottom: 10px;
+				padding: 5px;
+				width: 960px;
+				height: 390px;
+				border: 1px #d1d1d1 solid;
+				border-radius: 5px;
+				resize: none;
+				outline: none;
+			}
+			
+			#content #post textarea:hover {
+				-border: 1px #9bdf70 solid;
+				background: #f0fbeb;
+			}
+			
+			#content #post #postBt,
+			#content #post #clearBt {
+				margin-left: 5px;
+				padding: 3px;
+				float: right;
+			}
+			
+			#comment {
+				overflow: hidden;
+			}
+			
+			#comment p {
+				margin-bottom: 10px;
+				padding: 10px;
+				border-radius: 5px;
+			}
+			
+			#comment p:nth-child(odd) {
+				border: 1px solid #e3e197;
+				background: #ffd;
+			}
+			
+			#comment p:nth-child(even) {
+				border: 1px solid cadetblue;
+				-background: #f2fddb;
+			}
+			/*#comment p span{display:inline; float:left;}*/
+			
+			#comment p .right {
+				text-align: right;
+			}
+			
+			#comment p .msg {
+				width: 738px;
+			}
+			
+			#comment p .datetime {
+				width: 200px;
+				color: #999;
+				text-align: right;
+			}
+		</style>
+
+		<style>
+			#nav {
+				text-align: center;
+			}
+			
+			#nav ul li {
+				display: inline-block;
+				vertical-align: middle;
+				padding: 0 15px 0 15px;
+				border-left: 1px dotted #2bbc8a;
+				line-height: 15px;
+			}
+			
+			#nav ul li a {
+				font-size: .8rem;
+				color: #2bbc8a;
+			}
+			
+			#nav ul .blog {
+				border-left: 0px dotted #2bbc8a;
+			}
+		</style>
+
+	</head>
+
+	<body id="home">
+		<!-- banner -->
+		<nav class="w3-navbar">
+
+			<div class="container">
+
+				<div class="nav-top" style="position: relative;">
+
+					<!-- Logo -->
+					<div class="logo">
+						<a a href="home.html">
+							<font face="KaiTi" title="home">赤子丹心 </font><span><img src="images/印章.jpg" style="width: 25px; height: 32px;" /> </span>
+						</a>
+					</div>
+					<!-- Logo -->
+					<div class="right">
+						<div class="w3-socials">
+							<img src="images/横幅1.jpg" style="position: relative;margin-left: -688px;margin-right: 16px;width: 200px;height: 40px;" />
+							<img src="images/横幅2.jpg" style="position: relative;width: 190px;height: 40px;" />
+						</div>
+					</div>
+					<div class="clear" style="margin:0 auto;width: 80px;height: 80px;border-radius: 20px;background: #fff;margin-right:200px;">
+						<div id="vsPlayAudio" style="margin: 4px auto;width: 55px;height: 55px;"></div>
+					</div>
+					<div class="clearfix"></div>
+
+				</div>
+			</div>
+			</div>
+			<!-- end container -->
+
+		</nav>
+		<!-- nav -->
+		<div style="width: 100%;">
+			<h1>用户留言 </h1></div>
+		<div>
+			<div style="background-color:#F1F1F1;">
+
+				<!-- nav -->
+				<div class="w3layouts-nav-right">
+					<div class="fat-nav">
+						<div class="fat-nav__wrapper">
+							<ul>
+								<li>
+									<a href="home.html">主页</a>
+								</li>
+								<li>
+									<a href="个人生平.html">个人生平</a>
+								</li>
+								<li>
+									<a href="作品展示.html">作品展示</a>
+								</li>
+								<li>
+									<a href="作品评价.html">作品评价</a>
+								</li>
+								<li>
+									<a href="作品集锦.html">作品集锦</a>
+								</li>
+								<li>
+									<a href="用户留言.html">用户留言</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container wow flipInX" style="-border: 1px solid yellow;-padding-top: 10px;">
+
+					<div id="content" style="-border: 2px solid saddlebrown;">
+						<div id="post">
+							<div style="background:none ;height:30px;">
+								<input type="submit" id="shangtian" name="Submit3" style="border:none; bcolor:black;" value="登录" onclick="prom()" /> 账号：
+								<input type="text" id="ritian" style="border: none;width: 70px; background-color: #F1F1F1;" onclick="prom()" />
+								<!--disabled="disabled"-->
+							</div>
+							&nbsp;
+							
+							<div>
+								<textarea class="transition" placeholder="" size="22"></textarea>
+							</div>
+							<input id="postBt" type="button" style="border:none; background-color:#3EADC5; color:white;border-radius:5px; width:80px; height:30px;" value="发表留言" />
+							<input id="clearBt" type="button" style="border:none; background-color:red; color:white;border-radius:5px; width:80px; height:30px;" value="清空" />
+						</div>
+						<div id="comment"></div>
+					</div>
+				</div>
+
+				<div class="w3l_footer">
+					<div class="container">
+						<div class="apple">
+							<ul>
+								<li>
+									<a href="#" target="_blank">侠之大者，为国为民。 </a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">桃花影落飞神剑，碧海潮生按玉箫。</a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">他强任他强，清风拂山岗，他横由他横，明月照大江。 </a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">情不知所起，一往情深 ；恨不知所终，一笑而泯。</a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">我是尘间摆渡人，为君闲计百年身。</a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">慧极必伤,情深不寿.</a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">情深意真岂在丑俊,千山万水苦随君行 .</a>
+								</li>
+
+								<li>
+									<a href="#" target="_blank">打不过，逃 !</a>
+								</li>
+
+							</ul>
+
+						</div>
+						<div class="connect-social">
+							<ul>
+								<li class="connect">联系我们 : </li>
+								<li>
+									<a href="#" class="social-button facebook"><i class="fa fa-qq"></i></a>
+								</li>
+								<li>
+									<a href="#" class="social-button twitter"><i class="fa fa-weixin"></i></a>
+								</li>
+								<li>
+									<a href="#" class="social-button google"><i class="fa fa-weibo"></i></a>
+								</li>
+								<li>
+									<a href="#" class="social-button linkedin"><i class="fa fa-cab"></i></a>
+								</li>
+							</ul>
+						</div>
+						<p class="agileits_w3ls_copyright">&copy;天地四方为江湖，世人聪明反糊涂。名利场上风浪起，赢到头来却是输。
+						</p>
+						<div class="arrow-container animated fadeInDown">
+							<a href="#home" class="arrow-2 scroll">
+								<i class="fa fa-angle-up"></i>
+							</a>
+							<div class="arrow-1 animated hinge infinite zoomIn"></div>
+						</div>
+					</div>
+				</div>
+				<!--//footer -->
+
+				<!-- Default-JavaScript-File -->
+				<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+				<script type="text/javascript" src="js/bootstrap.min.js"></script>
+				<!-- //Default-JavaScript-File -->
+
+				<!-- gauge-meter -->
+				<script src="js/jquery.gauge.js"></script>
+				<script type="text/javascript">
+					var named;
+
+					function delete1(id) {
+						localStorage.removeItem(id);
+						this.Storage.writeData();
+					}
+
+					function prom() {
+
+						var name = prompt("请输入您的名字", ""); //将输入的内容赋给变量 name ，
+						named = name;
+						//这里需要注意的是，prompt有两个参数，前面是提示的话，后面是当对话框出来后，在对话框里的默认值
+
+						if(named) //如果返回的有内容
+
+						{
+
+							alert("欢迎您：" + name)
+							document.getElementById("shangtian").style.display = "none";
+							document.getElementById("ritian").value = named;
+
+						} else {
+							document.getElementById("ritian").value = "匿名发言者";
+						}
+
+					}
+					var Storage = {
+						saveData: function() //保存数据
+							{
+
+								var data = document.querySelector("#post textarea");
+								if(data.value != "") {
+									var time = new Date().getTime() + Math.random() * 5; //getTime是Date对象中的方法，作用是返回 1970年01月01日至今的毫秒数
+									if(named) {
+										localStorage.setItem(time, data.value + "|" + named + "|" + this.getDateTime()); //将毫秒数存入Key值中，可以降低Key值重复率
+									} else {
+										localStorage.setItem(time, data.value + "|" + "匿名发言者" + "|" + this.getDateTime()); //将毫秒数存入Key值中，可以降低Key值重复率
+									}
+
+									data.value = "";
+									this.writeData();
+								} else {
+									alert("请填写您的留言！");
+								}
+							},
+						writeData: function() //输出数据
+							{
+								var dataHtml = "",
+									data = "";
+								for(var i = localStorage.length - 1; i >= 0; i--) //效率更高的循环方法
+								{
+									data = localStorage.getItem(localStorage.key(i)).split("|");
+
+									//dataHtml += "<p><span class=\"msg\">" + data[0] + "</span><span class=\"datetime\">" + data[1] + "</span><span>" + data[2]+"</span></p>";
+									dataHtml += "<span style=>" + data[1] + "<span style=\"float:right\">" + data[2] + "</span><p><span class=\"msg\">" + data[0] + "<input style=\"float:right;border:none;border-radius:5px;\" id=\"clearBt\" type=\"button\" onclick=\"delete1(" + localStorage.key(i) + ");\" value=\"删除\"/>" + "</span></p>";
+								}
+								document.getElementById("comment").innerHTML = dataHtml;
+							},
+						clearData: function() //清空数据
+							{
+								if(localStorage.length > 0) {
+									if(window.confirm("清空后不可恢复，是否确认清空？")) {
+										localStorage.clear();
+										this.writeData();
+									}
+								} else {
+									alert("没有需要清空的数据！");
+								}
+							},
+						getDateTime: function() //获取日期时间，例如 2012-03-08 12:58:58
+							{
+								var isZero = function(num) //私有方法，自动补零
+									{
+										if(num < 10) {
+											num = "0" + num;
+										}
+										return num;
+									}
+
+								var d = new Date();
+								return d.getFullYear() + "-" + isZero(d.getMonth() + 1) + "-" + isZero(d.getDate()) + " " + isZero(d.getHours()) + ":" + isZero(d.getMinutes()) + ":" + isZero(d.getSeconds());
+							}
+					}
+
+					window.onload = function() {
+						Storage.writeData(); //当打开页面的时候，先将localStorage中的数据输出一边，如果没有数据，则输出空
+						document.getElementById("postBt").onclick = function() {
+								Storage.saveData();
+							} //发表评论按钮添加点击事件，作用是将localStorage中的数据输出
+						document.getElementById("clearBt").onclick = function() {
+								Storage.clearData();
+							} //清空所有已保存的数据
+					}
+				</script>
+				<script>
+					$(document).ready(function() {
+						$("#gauge1").gauge(90, {
+							color: "#ff4f81",
+							unit: " %",
+							type: "halfcircle"
+						});
+						$("#gauge2").gauge(70, {
+							color: "#2dde98",
+							unit: " %",
+							type: "halfcircle"
+						});
+						$("#gauge3").gauge(75, {
+							color: "#00aeff",
+							unit: " %",
+							type: "halfcircle"
+						});
+						$("#gauge4").gauge(40, {
+							color: "#ffb900",
+							unit: " %",
+							type: "halfcircle"
+						});
+					});
+				</script>
+				<!-- //gauge-meter -->
+
+				<!--menu script-->
+				<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+				<script src="js/jquery.fatNav.js"></script>
+				<script>
+					(function() {
+
+						$.fatNav();
+
+					}());
+				</script>
+
+				<!--Start-slider-script-->
+				<script defer src="js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(window).load(function() {
+						$('.flexslider').flexslider({
+							animation: "slide",
+							start: function(slider) {
+								$('body').removeClass('loading');
+							}
+						});
+					});
+				</script>
+				<!--End-slider-script-->
+
+				<!-- smooth scrolling -->
+				<script src="js/SmoothScroll.min.js"></script>
+				<!-- smooth scrolling -->
+
+				<!-- scrolling script -->
+				<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event) {
+							event.preventDefault();
+							$('html,body').animate({
+								scrollTop: $(this.hash).offset().top
+							}, 1000);
+						});
+					});
+				</script>
+				<!-- //scrolling script -->
+
+	</body>
+	<!-- //Body -->
+
+</html>
+<script>
+	var player = new vsPlayAudio({
+		music: {
+			//必需项,音乐配置
+			type: 'cloud',
+			//必需项,网易云方式指定填'cloud'
+			source: 2819944616
+				//必需项,网易云音乐歌单id
+				//登录网易云网页版,在网页地址中拿到
+				// ... playlist?id=317921676
+		},
+		autoPlay: true,
+		random: true
+	});
+</script>
+<script type="text/javascript">
+	function autoScroll(obj) {
+
+		$(obj).find("ul").animate({
+
+			marginTop: "-39px"
+
+		}, 500, function() {
+
+			$(this).css({
+				marginTop: "0px"
+			}).find("li:first").appendTo(this);
+
+		})
+
+	}
+
+	$(function() {
+
+		setInterval('autoScroll(".maquee")', 3000);
+
+		setInterval('autoScroll(".apple")', 2000);
+
+	})
+</script>
